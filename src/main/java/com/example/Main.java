@@ -44,6 +44,54 @@ public class Main {
         for (int i = 0; i < fruits.length; i += 2) {
             System.out.println(fruits[i]);
         }
+
+        // 8. PrintArray
+        int[] exArray = {9, 8, 7, 6, 5};
+        System.out.println("Innehåll i arrayen:");
+        printArray(exArray);
+
+        //9.calculateAverage
+        int[] myArray = {10, 20, 30, 40, 50};
+        float average = calculateAverage(myArray);
+        System.out.println("Medelvärdet är: " + average);
+
+        //10.searchArray
+        int[] sampleArray = {10, 20, 30, 40, 50};
+        int targetValue = 30;
+
+        if (searchArray(sampleArray, targetValue)) {
+            System.out.println("Värdet " + targetValue + " finns i arrayen.");
+        } else {
+            System.out.println("Värdet " + targetValue + " finns INTE i arrayen.");
+        }
+    }
+
+
+    //=== Metod för att räkna ut medelvärde i arrayen
+    public static float calculateAverage(int [] array){
+        int sum =0;
+        for (int value:array){
+            sum+=value;
+        }
+        return (float) sum/array.length;
+    }
+
+
+    //=== Metod för searchArray
+    public  static boolean searchArray (int [] array,int target){
+        for(int value:array) {
+            if (value== target){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // === Metod för printArray ===
+    public static void printArray(int[] array) {
+        for (int value : array) {
+            System.out.println(value);
+        }
     }
 
     // === Metod för Addition ===
