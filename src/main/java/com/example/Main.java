@@ -104,7 +104,7 @@ public class Main {
         System.out.println("Hej " + name + "! Välkommen!");
     }
 
-    // === Metod för att kontrollera jämnt tal ===
+    // === Metod för att kontrollera jämnt taal ===
     public static boolean isEven(int number) {
         return number % 2 == 0;
     }
